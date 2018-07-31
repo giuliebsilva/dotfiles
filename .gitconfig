@@ -1,6 +1,6 @@
 [user]
-	name = Lucas Pélos
-	email = lucas.pelos@gmail.com
+	name = Giulie Brito da Silva
+	email = giuliebsilva@gmail.com
 [alias]
 	blackmagic = reflog
 	ci = commit
@@ -13,7 +13,7 @@
 [credential]
 	helper = cache
 [core]
-	excludesfile = /home/lucas/.gitignore
+	excludesfile = /home/giulie/.gitignore
 [push]
 	default = current
 [color]

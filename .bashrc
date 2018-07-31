@@ -110,23 +110,14 @@ export GIT_PS1_SHOWUPSTREAM=auto
 
 export IRBRC=$HOME/.irbrc
 export CDPATH=$CDPATH:$HOME/workspace
-export STANDALONE_PATH="$HOME/standalone"
-export ANDROID_HOME="$STANDALONE_PATH/Android"
 
 # Paths
 export PATH="./.bundle/binstubs:$PATH"                      # gems bins from local folder
 export PATH="./.bundle/bin:$PATH"                           # gems bins from local folder
 export PATH="./node_modules/.bin:$PATH"                     # node bins from local folder
 export PATH="$HOME/.rvm/bin:$PATH"                          # rvm
-export PATH="$HOME/.rbenv/bin:$PATH"                        # rbenv
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"     # rbenv ruby-build
-export PATH="$HOME/.pyenv/bin:$PATH"                        # pyenv
 export PATH="$HOME/.composer:$PATH"                         # composer
 export PATH="$HOME/.arc/arcanist/bin/:$PATH"                # arcanist
-export PATH="$ANDROID_HOME/platform-tools/:$PATH"           # android-sdk
-export PATH="$ANDROID_HOME/tools/:$PATH"                    # android-sdk
-export PATH="$STANDALONE_PATH/android-studio/bin/:$PATH"    # android-studio
-export PATH="$STANDALONE_PATH/genymotion/:$PATH"            # genymotion
 export PATH="/usr/local/heroku/bin:$PATH"                   # Heroku Toolbelt
 
 # rbenv
@@ -151,13 +142,6 @@ fi
 
 RVM_GIT='($($rvm_bin_path/rvm-prompt)) $(__git_ps1 "[ %s ]")'
 export PS1="${USER_AT_HOST}:${WORKING_DIR} ${RVM_GIT}\n$ "
-
-# Standalone applications
-alias franz="$STANDALONE_PATH/Franz/Franz"
-alias ngrok="$STANDALONE_PATH/ngrok"
-alias popcorntime="$STANDALONE_PATH/Popcorn-Time/Popcorn-Time"
-alias redis="$STANDALONE_PATH/redis/src/redis-server"
-alias stremio="$STANDALONE_PATH/stremio/Stremio.sh"
 
 # Wordpress MVC alias
 alias wpmvc="WPMVC_WORDPRESS_PATH=./htdocs/wordpress/ ./htdocs/wp-content/plugins/wp-mvc/wpmvc"
